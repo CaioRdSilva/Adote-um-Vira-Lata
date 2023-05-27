@@ -18,14 +18,14 @@ const InfoEvento = () => (
         <TitulotipoEvento />
         <div className='flex'>
             <div id='info' className='min-w-[60%] max-w-[60%]'>
-                <div className='block min-h-[90%] pt-[5%]'>
+                <div className='block min-h-[90%] pt-[2%] space-y-2'>
 
                     <CriadorEvento />
                     <LocalEvento />
                     <DataEvento />
 
                 </div>
-
+                
                 <InteracoesEvento />
 
             </div>
@@ -77,7 +77,7 @@ const TitulotipoEvento = () => (
     <div className='inline-flex'>
         <div className='inline-flex w-full align-middle'>
             <h1 id='titulo' className='text-2xl font-bold'>All dogs go to heaven</h1>
-            <h1 id='evento' className='ml-[10px] align-bottom text-xl'>Adoção</h1>
+            <h1 id='evento' className='ml-[10px] align-bottom text-xl text-[#FF8A00]'>Adoção</h1>
         </div>
     </div>
     
