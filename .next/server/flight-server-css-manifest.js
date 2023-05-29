@@ -1,0 +1,18 @@
+self.__RSC_CSS_MANIFEST={
+  "cssImports": {
+    "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\app\\layout.jsx": [
+      "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css"
+    ]
+  },
+  "cssModules": {
+    "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\app\\page": [
+      "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css"
+    ],
+    "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\app\\blog\\page": [
+      "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css"
+    ],
+    "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\app\\eventos\\page": [
+      "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css"
+    ]
+  }
+}
