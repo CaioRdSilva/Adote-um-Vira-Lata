@@ -13,14 +13,14 @@ const Post = () => (
 )
 
 const InfoPost = () => (
-    <div className='md:xl:w-[60%] md:xl:h-full'>
+    <div className='md:lg:xl:2xl:w-[60%] md:xl:h-full'>
         <div className='mx-5 my-2'>
-            <div className='w-full md:max-2xl:h-[30%]'>
+            <div className='w-full'>
                 <TituloPost />
                 <TipoleituraPost />
                 <AutorPost />
             </div>
-            <div className='h-[60%] py-1'>
+            <div className='py-1 '>
                 <DescPost />
             </div>
             
@@ -33,11 +33,13 @@ const InfoPost = () => (
 )
 
 const ImagemPost = () => (
-    <div className='relative aspect-square sm:aspect-video md:lg:xl:2xl:aspect-square'>
+    <div className='relative aspect-square sm:aspect-video md:lg:xl:2xl:aspect-[4/3]'>
             <Image 
                 className='object-cover object-center rounded-l-xl md:lg:xl:2xl:rounded-l-xl md:lg:xl:2xl:rounded-t-none sm:rounded-bl-none sm:rounded-t-xl'
-                fill
-                contain src=''/>
+                fill={true}
+                sizes='(min-width: 768px) 40vw, (min-width: 1200px) 50vw, 33vw'
+                alt='Post-Image'
+                contain='true' src="/images/banner.webp"/>
     </div>
 )
 
@@ -46,7 +48,7 @@ const TituloPost = () => (
 )
 const TipoleituraPost = () => (
     <div className='inline-flex md:max-2xl:text-xl'>
-        <div><h2 className='text-ms text-bold text-[#FF8A00]'>Adoção</h2></div>
+        <div><h2 className='text-orange-400 text-ms text-bold'>Adoção</h2></div>
         <div className='mx-2'><h1>•</h1></div>
         <div><h2 className='text-ms'>4 min</h2></div>
     </div>
@@ -65,7 +67,7 @@ const AutorPost = () => (
 )
 const DescPost = () => (
     <div className='mx-2'>
-        <p className='text-md md:text-xl'>Universidade Federal de Pernambuco - UFPE Pró-reitora de extensão e cultura Centro de Biociências Departamento de Histologia e...</p>
+        <p className=''>Universidade Federal de Pernambuco - UFPE Pró-reitora de extensão e cultura Centro de Biociências Departamento de Histologia e...</p>
     </div>
 )
 const InteracoesPost = () => (

@@ -5,13 +5,16 @@
     ]
   },
   "cssModules": {
-    "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\app\\page": [
+    "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\app\\blog\\[id]\\page": [
       "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css"
     ],
     "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\app\\blog\\page": [
       "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css"
     ],
     "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\app\\eventos\\page": [
+      "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css"
+    ],
+    "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\app\\page": [
       "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css"
     ]
   }

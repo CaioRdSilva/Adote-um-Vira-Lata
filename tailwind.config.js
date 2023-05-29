@@ -8,6 +8,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors : {
+        'green' : {
+          '900' : '#569562',
+        },
+        'orange' : {
+          '500' : '#FF8A00',
+        }
+      },
+      aspectRatio: {
+        'wall': '20 / 9',
+      },
       fontFamily: {
         poppins: ['"Poppins"', ...defaultTheme.fontFamily.sans]
       }

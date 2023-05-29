@@ -9590,6 +9590,13 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
+    "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
     "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\components\\Menu.jsx": {
       "id": "(app-client)/./components/Menu.jsx",
       "name": "*",
@@ -11773,13 +11780,6 @@ self.__RSC_MANIFEST={
         "app/eventos/page:app/eventos/page"
       ],
       "async": false
-    },
-    "C:\\Users\\David\\OneDrive\\Documentos\\GitHub\\Adote-um-Vira-Lata\\style\\globals.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
     }
   }
 }
