@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Menu from '../../components/Menu'
-import Image from 'next/image'
 
 export default function blogPage(){
     return (
@@ -11,7 +9,6 @@ export default function blogPage(){
         <meta name='viewport' content='inittial-scale=1.0, width=device-width'/>
         <title>Home</title>
     </Head>
-    <Menu />
         <h1>Blog page</h1>
         </div>
     )

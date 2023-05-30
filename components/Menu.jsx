@@ -26,7 +26,7 @@ const Menu = () => {
         <Link className={router == "/galeria" ? "text-green-900" : "hover:text-green-900"} href="/galeria">Galeria</Link>
       </li>
       <li>
-        <Link className="text-orange-500" href="/galeria">Sing-in</Link>
+        <Link className="text-orange-500" href="/singin">Sing-in</Link>
       </li>
       <li>
         <Link className="text-orange-500" href="/galeria">Login</Link>
