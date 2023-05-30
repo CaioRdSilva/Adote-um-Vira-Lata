@@ -608,9 +608,6 @@ video {
 .w-6\/12 {
   width: 50%;
 }
-.w-9\/12 {
-  width: 75%;
-}
 .w-\[20px\] {
   width: 20px;
 }
@@ -634,9 +631,6 @@ video {
 }
 .items-center {
   align-items: center;
-}
-.justify-center {
-  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -1055,10 +1049,6 @@ video {
 
   .sm\:aspect-video {
     aspect-ratio: 16 / 9;
-  }
-
-  .sm\:aspect-wall {
-    aspect-ratio: 20 / 9;
   }
 
   .sm\:rounded-t-xl {
