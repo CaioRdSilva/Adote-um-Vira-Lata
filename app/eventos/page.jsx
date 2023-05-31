@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Post from '../../components/Post'
+import Evento from '../../components/Evento'
 
 export default function blogPage(){
     return (
@@ -10,8 +10,9 @@ export default function blogPage(){
         <meta name='viewport' content='inittial-scale=1.0, width=device-width'/>
         <title>Home</title>
     </Head>
-    <Post />
-    <h1>bom dia</h1>
+        <div className='grid gap-4 grid-cols-2 mb-5'>
+            <Evento />
+        </div>
         </div>
     )
 }

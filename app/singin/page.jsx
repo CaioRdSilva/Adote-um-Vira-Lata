@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import bcrypt, { genSaltSync } from 'bcrypt'
+import { redirect } from 'next/navigation';
 
 export default function singIn() {
   async function handleSubmit(formData = FormData) {
@@ -10,12 +11,13 @@ export default function singIn() {
 
     const saltRounds = 10;
     const salt = genSaltSync(saltRounds)
-    const hashedPassword = bcrypt.hashSync(senha, salt)
-
-    if(confirPass !=senha){
-      console.log('diferente')
+    if(senha == confirPass){
+    const hashedPassword = bcrypt.hashSync(senha, salt);
+    redirect('/')
+    }else {
+      return
     }
-    console.log(hashedPassword)
+
   }
 
   return (

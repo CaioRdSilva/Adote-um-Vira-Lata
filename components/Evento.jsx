@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Evento = () => (
 
-    <div className='block mx-5 my-4 bg-[#f9f9f9] min-h-[500px] w-12/12 rounded-xl drop-shadow-md'>
+    <div className='block mx-3 my-2 bg-[#f9f9f9] min-h-[550px] w-12/12 rounded-xl drop-shadow-md'>
         <ImagemEvento />
         <InfoEvento />
     </div>
@@ -14,7 +14,7 @@ const Evento = () => (
 
 const InfoEvento = () => (
 
-    <div className='block mx-10 '>
+    <div className='block mx-8 '>
         <TitulotipoEvento />
         <div className='flex'>
             <div id='info' className='block w-full'>
@@ -41,7 +41,7 @@ const ImagemEvento = () => (
             <Image 
                 className='object-cover object-center rounded-t-xl'
                 fill
-                contain src='/test/t_evento1.webp'/>
+                contain src='/images/banner.webp'/>
     </div>
 )
 
@@ -76,15 +76,15 @@ const InteracoesEvento = () => (
 const TitulotipoEvento = () => (
     <div className='inline-flex'>
         <div className='inline-flex w-full align-middle'>
-            <h1 id='titulo' className='text-2xl font-bold'>All dogs go to heaven</h1>
-            <h1 id='evento' className='ml-[10px] align-bottom text-xl text-[#FF8A00] mx-0 my-auto'>Adoção</h1>
+            <h1 id='titulo' className='text-xl font-bold pr-10'>All dogs go to heaven</h1>
+            <h1 id='evento' className='ml-[10px] align-bottom text-xl text-[#FF8A00] mx-0 my-auto pl-20'>Adoção</h1>
         </div>
     </div>
     
 )
 
 const DescEvento = () => (
-    <div id='descricao' className='max-w-[40%] text-lg'>
+    <div id='descricao' className='max-w-[40%] text-m'>
         <p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est.Praesent vel viverra nisi. </p>
     </div>
 )
