@@ -1,16 +1,25 @@
 import Head from 'next/head'
+import bcrypt, { genSaltSync } from 'bcrypt'
 
 export default function singIn() {
   async function handleSubmit(formData = FormData) {
     "use server";
-    const email = formData.get("email");
+    const email = formData.get('email');
+    const senha = formData.get('password');
+    const confirPass= formData.get('Repetpassword');
 
-    console.log(email);
+    const saltRounds = 10;
+    const salt = genSaltSync(saltRounds)
+    const hashedPassword = bcrypt.hashSync(senha, salt)
+
+    if(confirPass !=senha){
+      console.log('diferente')
+    }
+    console.log(hashedPassword)
   }
 
   return (
     <div>
-      <div>
         <Head>
           <meta charSet="utf-8" />
           <meta name="robots" content="index, follow" />
@@ -20,12 +29,21 @@ export default function singIn() {
           />
           <title>Home</title>
         </Head>
-        <form action={handleSubmit}>
-          <label>
+        <div className='flex justify-center'>
+        <form action={handleSubmit} className='grid content-center'>
+          <label className='font-poppins font-bold text-md'>
             Email:
-            <input type="text" name="email" />
+            <input type="email" name="email" className='block border-solid border-2 rounded-full mb-2 pl-2 focus:outline-none required:border-orange-500 valid:border-green-900' required/>
           </label>
-          <input type="submit" value="Submit" />
+          <label className='font-poppins font-bold text-md'>
+            Senha:
+            <input type="password" name="password" className=' block border-solid border-2 rounded-full mb-2 pl-2 focus:outline-none required:border-orange-500 valid:border-green-900' required/>
+          </label>
+          <label className='font-poppins font-bold text-md'>
+            Repetir senha:
+            <input type="password" name="Repetpassword" className=' block border-solid border-2 rounded-full mb-4 pl-2 focus:outline-none required:border-orange-500 valid:border-green-900' required/>
+          </label>
+          <button type="submit" className='font-poppins font-bold text-md border-solid border-2 rounded-full border-green-900 hover:bg-green-900 hover:text-white'>Submit</button>
         </form>
       </div>
     </div>
