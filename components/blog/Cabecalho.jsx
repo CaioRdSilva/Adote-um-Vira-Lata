@@ -17,14 +17,14 @@ const BannerCabecalho = () => (
                         className='object-cover object-center'
                         fill={true}
                         alt='banner'
-                        src='/images/banner.webp'
+                        src='/test/teste-1.png'
                     />
     </div>
 )
 
 const InfoCabecalho = () => (
-    <div className='w-full mx-auto sm:md:lg:xl:2xl:w-6/12'>
-            <h1 className='text-3xl font-bold text-center text-orange-400 start'>
+    <div className='w-full mx-auto my-1 sm:md:lg:xl:2xl:w-6/12'>
+            <h1 className='text-3xl font-bold text-orange-400 text-start start'>
                 All dogs go to heaven
             </h1>
             <TipoDataTempoCabecalho />
@@ -51,7 +51,7 @@ const TipoDataTempoCabecalho = () => (
 
 const DescCabecalho = () => (
     <div className='pt-0 pb-2'>
-        <p className='text-gray-400'>
+        <p className='text-gray-400 text-md sm:text-md md:lg:xl:2xl:text-lg'>
             Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Paisis, filhis, espiritis santis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
         </p>
     </div>
