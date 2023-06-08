@@ -1,6 +1,11 @@
-import Head from 'next/head'
 import bcrypt, { genSaltSync } from 'bcrypt'
 import { redirect } from 'next/navigation';
+
+export const metadata = {
+  title: "SingIn",
+  description: "Adote um Vira Lata"
+}
+
 
 export default function singIn() {
   async function handleSubmit(formData = FormData) {
@@ -10,27 +15,18 @@ export default function singIn() {
     const confirPass= formData.get('Repetpassword');
 
     const saltRounds = 10;
-    const salt = genSaltSync(saltRounds)
+    const salt = genSaltSync(saltRounds);
     if(senha == confirPass){
     const hashedPassword = bcrypt.hashSync(senha, salt);
-    redirect('/')
+    return redirect('/')
     }else {
-      return
+      return;
     }
 
   }
 
   return (
     <div>
-        <Head>
-          <meta charSet="utf-8" />
-          <meta name="robots" content="index, follow" />
-          <meta
-            name="viewport"
-            content="inittial-scale=1.0, width=device-width"
-          />
-          <title>Home</title>
-        </Head>
         <div className='flex justify-center'>
         <form action={handleSubmit} className='grid content-center'>
           <label className='font-poppins font-bold text-md'>

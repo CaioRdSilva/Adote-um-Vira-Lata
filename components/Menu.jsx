@@ -10,7 +10,7 @@ const Menu = () => {
   return(
   <div className="container flex justify-between items-center pt-10 pb-10">
     <Link href="/">
-    <Image className="w-10 md:w-20 lg:w-20" width={1000} height={1000} contain src="/images/LOGO.webp"/>
+    <Image className="w-10 md:w-20 lg:w-20" width={1000} height={1000} contain="true" src="/images/LOGO.webp"/>
     </Link>
     <ul className="flex gap-6 font-poppins font-bold text-lg">
       <li>

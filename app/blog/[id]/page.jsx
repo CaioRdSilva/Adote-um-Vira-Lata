@@ -1,20 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
 import Cabecalho from '../../../components/blog/Cabecalho'
 import Conteudo from '../../../components/blog/Conteudo'
 import Comentario from '../../../components/blog/Comentario'
+
+export const metadata = {
+    title: "Blog",
+    description: "Adote um Vira Lata"
+}
+
 
 export default function postBlogPage({ params }){
     console.log(params);
     return(
         <div>
-            <Head>
-                <meta charSet='utf-8'/>
-                <meta name='robots' content='index, follow'/>
-                <meta name='viewport' content='inittial-scale=1.0, width=device-width'/>
-                <title>{params.id}</title>
-            </Head>
             <div>
                 
                 <Cabecalho />

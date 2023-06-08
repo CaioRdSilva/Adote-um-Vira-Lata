@@ -41,7 +41,7 @@ const ImagemEvento = () => (
             <Image 
                 className='object-cover object-center rounded-t-xl'
                 fill
-                contain src='/images/banner.webp'/>
+                contain="true" src='/images/banner.webp'/>
     </div>
 )
 
