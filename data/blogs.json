@@ -1,0 +1,12 @@
+{
+    "Posts": [
+        {
+            "id": "1",
+            "text": "Only one"
+        },
+        {
+            "id": "2",
+            "text": "Only two"
+        }
+    ]
+}

@@ -1,22 +1,25 @@
 import Image from 'next/image'
+import { IPost } from '../types/posts'
+import React from 'react'
 
+interface PostListProps {
+    posts: IPost[]
+}
 
-
-
-const Post = () => (
+const Post: React.FC<PostListProps> = ({ posts }) => (
     <div className='flex md:lg:xl:2xl:flex sm:block bg-[#fafafa] min-h-[min(20em, 320px)] min-w-[min(100%, 752px)] m-2 rounded-xl drop-shadow-md'>
 
         <ImagemPost />
-        <InfoPost />
         
-    </div>
-)
-
-const InfoPost = () => (
-    <div className='md:lg:xl:2xl:w-[60%] md:xl:h-full'>
+        <div className='md:lg:xl:2xl:w-[60%] md:xl:h-full'>
         <div className='mx-5 my-2'>
             <div className='w-full'>
-                <TituloPost />
+            <div>
+        {posts.map(post => (
+
+            <h1 className='text-xl font-bold md:max-2xl:text-2xl' key={post.id}>{post.text}</h1>
+        ))}
+    </div>
                 <TipoleituraPost />
                 <AutorPost />
             </div>
@@ -30,7 +33,11 @@ const InfoPost = () => (
             </div>
         </div>
     </div>
+        
+    </div>
 )
+
+
 
 const ImagemPost = () => (
     <div className='relative aspect-square sm:aspect-video md:lg:xl:2xl:aspect-[4/3]'>
@@ -39,13 +46,10 @@ const ImagemPost = () => (
                 fill={true}
                 sizes='(min-width: 768px) 40vw, (min-width: 1200px) 50vw, 33vw'
                 alt='Post-Image'
-                contain='true' src="/images/banner.webp"/>
+                src="/images/banner.webp"/>
     </div>
 )
 
-const TituloPost = () => (
-    <div><h1 className='text-xl font-bold md:max-2xl:text-2xl'>All dogs go to Heaven</h1></div>
-)
 const TipoleituraPost = () => (
     <div className='inline-flex md:max-2xl:text-xl'>
         <div><h2 className='text-orange-400 text-ms text-bold'>Adoção</h2></div>
@@ -57,9 +61,9 @@ const AutorPost = () => (
     <div className='flex text-xl'>
         <div className='mr-2 relative w-[35px] h-[35px] bg-black rounded-full'>
         <Image 
-            className='full-rounded'
-            fill
-            src='/images/LOGO.webp'/>
+                className='full-rounded'
+                fill
+                src='/images/LOGO.webp' alt={''}/>
         </div>
         
         <h3 className='mx-0 my-auto text-xl'>Adote Um Vira-Lata</h3>
