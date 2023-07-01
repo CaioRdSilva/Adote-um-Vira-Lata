@@ -11,10 +11,10 @@ export default async function blogPage(){
     console.log(posts)
 
     return (
-        <div>
+        <div className="">
         <AddBlog />
-        <div className='grid grid-cols-1 md:grid-cols-2 min-lg:max-2xl:grid-cols-2'>
-                    <Post  posts={posts}/>
+        <div className=''>
+        <Post posts={posts}/>
                 </div>
         </div>
     )

@@ -8,5 +8,10 @@
             "id": "2",
             "text": "Only two"
         }
+        ,
+        {
+            "id": "3",
+            "text": "Only three"
+        }
     ]
 }
