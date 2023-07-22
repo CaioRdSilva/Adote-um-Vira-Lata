@@ -26,11 +26,11 @@ const Menu = () => {
         <Link className={router == "/galeria" ? "text-green-900" : "hover:text-green-900"} href="/galeria">Galeria</Link>
       </li>
       <li>
-        <Link className="text-orange-500" href="/singin">Sing-in</Link>
+        <Link className="text-orange-500" href="/register">Sing-in</Link>
       </li>
-      <li>
+      {/*<li> 
         <Link className="text-orange-500" href="/login">Login</Link>
-      </li>
+  </li>*/}
     </ul>
   </div>
   )

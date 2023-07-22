@@ -7,6 +7,14 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/pages/*": ["pages/*"],
+      "@/app/*": ["app/*"],
+      "@/lib/*": ["lib/*"],
+      "@/styles/*": ["styles/*"]
+    },
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -28,7 +36,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/layout.jsx", "components/addBlog.tsx"  ],
+, "app/layout.tsx", "components/addBlog.tsx"  ],
   "exclude": [
     "node_modules"
   ]

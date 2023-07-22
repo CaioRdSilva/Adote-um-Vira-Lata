@@ -1,8 +1,9 @@
 import Cabecalho from '../../../components/blog/Cabecalho'
 import Conteudo from '../../../components/blog/Conteudo'
 import Comentario from '../../../components/blog/Comentario'
+import { Metadata } from 'next'
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Blog",
     description: "Adote um Vira Lata"
 }

@@ -3,21 +3,25 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "prisma generate && next dev",
+    "build": "prisma generate && prisma db push && next build",
     "start": "next start",
     "lint": "next lint",
     "json-server": "json-server --watch data/blogs.json --port 3001"
   },
   "dependencies": {
+    "@prisma/client": "^5.0.0",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
     "daisyui": "^3.1.5",
-    "next": "^13.4.7",
+    "next": "^13.4.9",
+    "next-auth": "^4.22.3",
     "postcss": "8.4.24",
+    "prisma": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {

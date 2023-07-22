@@ -1,6 +1,7 @@
 import FotoGaleria from '../../components/galeria/FotoGaleria'
+import { Metadata } from 'next'
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Galeria",
     description: "Adote um Vira Lata"
 }
