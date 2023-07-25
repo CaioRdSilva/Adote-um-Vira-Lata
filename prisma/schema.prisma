@@ -24,7 +24,7 @@ model user {
   email     String    @unique(map: "User_email_key")
   password  String
   createdAt DateTime  @default(now())
-  name      String?
+  name      String
   role      user_role @default(USER)
   post      post[]
 }

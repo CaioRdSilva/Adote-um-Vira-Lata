@@ -11,6 +11,10 @@ export const authOptions: NextAuthOptions = {
             label: "Email",
             type: "email",
         },
+        name : {
+          label: "Name",
+          type: "text"
+        },
         password: { 
             label: "Password", 
             type: "password" 

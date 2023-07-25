@@ -6,9 +6,9 @@ export default async function AuthStatus() {
   return (
     <div >
       {session && (
-        <p className="text-gray-500 text-sm">
-          Signed in as {session.user?.email}
-        </p>
+        <h3 className="text-gray-500 text-sm">
+          Signed in as {session.user?.name}
+        </h3>
       )}
     </div>
   );
