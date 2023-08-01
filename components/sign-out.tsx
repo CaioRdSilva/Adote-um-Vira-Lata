@@ -8,7 +8,6 @@ export default  function SignOut() {
         { session ? (
           <div>
           <Link href="/protected">Perfil</Link>
-          <button onClick={() => signOut()}>Sair</button>
           </div>
       ) : (<Link className="text-orange-500" href="/register">Sign In</Link>)}
     </div>
