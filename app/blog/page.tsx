@@ -1,7 +1,8 @@
 import { getAllPosts } from '../../api'
 import Post from '../../components/Post'
-import AddBlog from '../../components/addBlog'
 import { Metadata } from 'next'
+import { getServerSession } from 'next-auth';
+import { authOptions } from '../api/auth/[...nextauth]/route';
 
 export const metadata: Metadata = {
     title: "Blog",
@@ -10,11 +11,9 @@ export const metadata: Metadata = {
 
 export default async function blogPage(){
     const posts = await getAllPosts();
-    console.log(posts)
 
     return (
         <div className="">
-        <AddBlog />
         <div className=''>
         <Post posts={posts}/>
                 </div>

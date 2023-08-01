@@ -2,7 +2,6 @@ import '@/styles/globals.css'
 import Menu from '@/components/Menu'
 import { Metadata } from 'next'
 import { Toaster } from 'react-hot-toast'
-//import  AuthStatus  from 'src/components/auth-status'
 import React, { Suspense } from 'react'
 import { NextAuthProvider } from '@/app/providers'
 
@@ -28,7 +27,7 @@ export default function RootLayout({ children } : { children: React.ReactNode}) 
             <Menu />
             <Toaster />
             <Suspense fallback="Loading..">
-                
+                 
             </Suspense>
                { children }
                </NextAuthProvider>

@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, user_role } from "@prisma/client";
 
 declare global {
     var prisma: PrismaClient | undefined;
@@ -7,6 +7,7 @@ declare global {
 declare module 'next-auth' {
   interface User {
     id: number; // <- here it is
+    role?: user_role;
   }
 }
 

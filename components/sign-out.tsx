@@ -1,18 +1,16 @@
-"use client";
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 
 export default  function SignOut() {
-  const { data: session, status } = useSession()
+  const { data: session} = useSession()
   return (
     <div>
         { session ? (
-      <button
-        className="text-gray-500 hover:text-gray-700 transition-all"
-        onClick={() => signOut()}
-      >
-        Sair de {session.user?.name}?
-      </button>) : (<Link className="text-orange-500" href="/register">Sign In</Link>)}
+          <div>
+          <Link href="/protected">Perfil</Link>
+          <button onClick={() => signOut()}>Sair</button>
+          </div>
+      ) : (<Link className="text-orange-500" href="/register">Sign In</Link>)}
     </div>
   );
 }
