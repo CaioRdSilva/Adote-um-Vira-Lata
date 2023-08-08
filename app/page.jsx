@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function home(){
     return(
-        <div>
+        <>
             <Image className='w-50 sm:w-100 md:w-300 lg:w-400 xl:w-800 2xl:w-1000 object-fit' width={2048} height={2048} contain="true" src='/images/banner.webp'/>
             <div className='text-center pt-12'>
                 <h1 className='font-poppins font-bold text-3xl'>QUEM NÓS SOMOS</h1>
@@ -13,6 +13,6 @@ export default function home(){
             <div className='text-center pt-12'>
                 <h1 className='font-poppins font-bold text-3xl'>CONHEÇA A NOSSA HISTÓRIA</h1>
             </div>
-        </div>
+        </>
     )
 }

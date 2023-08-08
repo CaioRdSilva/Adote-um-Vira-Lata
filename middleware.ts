@@ -1,14 +1,14 @@
-import { getToken } from "next-auth/jwt";
+import { getToken, JWT } from "next-auth/jwt";
 import { NextRequest, NextResponse } from "next/server";
 
 export default async function middleware(req: NextRequest) {
-  const path = req.nextUrl.pathname;
+  const path: string = req.nextUrl.pathname;
 
   if (path === "/") {
     return NextResponse.next();
   }
 
-  const session = await getToken({
+  const session: JWT = await getToken({
     req,
     secret: process.env.NEXTAUTH_SECRECT,
   });
@@ -23,6 +23,6 @@ export default async function middleware(req: NextRequest) {
   return NextResponse.next();
 }
 
-export const config = {
+export const config: {matcher: string[]} = {
   matcher: ["/protected/:path*", "/proteceted"],
 };

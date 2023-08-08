@@ -12,6 +12,7 @@ export default function Form({type}: {type: "login" | "register"}) {
     const router = useRouter();
 
     return(
+        <>
         <form
             onSubmit={(e)=> {
                 e.preventDefault();
@@ -133,5 +134,6 @@ export default function Form({type}: {type: "login" | "register"}) {
                     </p>
                 )}
         </form>
+        </>
     )
 }

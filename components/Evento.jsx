@@ -3,11 +3,12 @@ import Image from 'next/image'
 
 
 const Evento = () => (
-
+    <>
     <div className='block mx-3 my-2 bg-[#f9f9f9] min-h-[550px] w-12/12 rounded-xl drop-shadow-md'>
         <ImagemEvento />
         <InfoEvento />
     </div>
+    </>
 )
 
 

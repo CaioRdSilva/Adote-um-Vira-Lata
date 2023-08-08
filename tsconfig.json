@@ -3,7 +3,7 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -34,6 +34,7 @@
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
+    "src/**/*.ts*",
     "**/*.ts",
     "**/*.tsx"
 , "app/layout.tsx", "components/addBlog.tsx"  ],

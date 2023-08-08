@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const FotoGaleria = () => (
+    <>
     <div className=''>
         <Image 
         className='w-full rounded'
@@ -9,6 +10,7 @@ const FotoGaleria = () => (
         src='/test/teste-1.png'
         />
     </div>
+        </>
 )
  
 export default FotoGaleria;

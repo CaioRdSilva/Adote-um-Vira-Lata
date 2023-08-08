@@ -8,6 +8,7 @@ import SignOut from "@/components/sign-out";
 const Menu = () => {
   const router = usePathname();
   return(
+    <>
   <div className="container flex justify-between items-center pt-10 pb-10">
     <Link href="/">
     <Image className="w-10 md:w-20 lg:w-20" width={1000} height={1000} alt="logo" src="/images/LOGO.webp"/>
@@ -33,6 +34,7 @@ const Menu = () => {
   </li>*/}
     </ul>
   </div>
+  </>
   )
 };
 
